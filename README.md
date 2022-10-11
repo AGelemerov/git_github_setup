@@ -4,7 +4,7 @@
 - Easy to understand
 - Easy to follow logic
 
-<img src="../images/why_python.png" title="DevOps Cycle" alt="DevOps_Cycle" width="600"/>
+<img src="../images/why_python.png" title="Why choose Python" alt="DevOps_Cycle" width="600"/>
 
 ## Python use cases
 1. Data Analysis
@@ -15,7 +15,7 @@
 6. Educational
 7. Software Testing
 
-<img src="../images/python_use_cases.png" title="DevOps Cycle" alt="DevOps_Cycle" width="600"/>
+<img src="../images/python_use_cases.jpg" title="Use Cases" alt="DevOps_Cycle" width="600"/>
 
 ## Python set up with PyCharm
 - Ensure you have Python version 3.7+ installed
