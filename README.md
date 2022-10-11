@@ -20,7 +20,7 @@
 ## Python set up with PyCharm
 - Ensure you have Python version 3.7+ installed
 - Install PyCharm (remember to check the box with "Add Python to PATH")
-- To ensure everything is setup correctly, write a simple "hello world" command
+- To ensure everything is set up correctly, write a simple "hello world" command
 - 
 ## Python variables
 - Variables are something we store data in
@@ -86,4 +86,47 @@ gross_salary = "salary + travel"
 # print(name)
 # print("Hello " + name)
 ```
-
+# How to set up Git and GitHub
+## Install Git
+1. Follow this link `https://git-scm.com/book/en/v2/Getting-Started-Installing-Git`
+2. Follow the instructions on the website closely and ensure you are doing exactly what it tells you
+   1. Here is a link for the git wizard `https://git-scm.com/download` 
+## What to do to make sure you run a program with administrator privileges every time
+1. Find the executable for Git or your shortcut
+2. Select it and go to `Properties/Compatibility`
+3. Check the `Run this program as an administrator`
+4. You're all set!
+## Setting up GitHub
+1. Make an account for GitHub and make a new repository
+2. The first page of the new repository will have instructions on how to link your git to github
+3. Follow these as closely as you can as one skip or mess up will cause you a lot of problems
+### Things that could go wrong
+- You may not have access to something as you didn't start the program with admin privileges (refer to previous section to solve this)
+- You did not do the SSH key pair correctly (ensure you follow the instructions here very closely)
+- You pasted the private key on github instead of the public one (ensure the public key is pasted in that section)
+- You did not initialise the folder you want to be a local repo as one (git init from git bash terminal)
+- Your IDE or terminal keeps giving you `ssh: connect to host github.com port 22: Network is unreachable`
+  - In this case specifically, you will need to create a config file to force SSH to use a specific port used for github
+  - To do this open the `.ssh` folder in your bash terminal
+  - Copy and paste the following commands in the terminal
+    - `nano ~/.ssh/config`
+    - Copy and paste this EXACTLY into the file you just opened
+      - ```bash
+        Host github.com
+          Hostname ssh.github.com
+          Port 443
+        ```
+    - To exit this editor
+      - Press Ctrl + O (letter not number)
+      - Press Enter
+      - Press Ctrl + x
+    - To see if you did it correctly use the following command
+      - `ssh -T git@github.com`
+      - If the command times out, you did something wrong, try it again
+    - Next steps:
+      - It will most likely as you a question with something called a "fingerprint"
+      - Say "yes" to this, and agree to anything else
+      - Run this command again `ssh -T git@github.com`
+      - And it should say `Hi xxxx! You've successfully authenticated, but GitHub does no provide shell access`
+      - That means you are done
+      - You can now push from your PyCharm or any IDE
