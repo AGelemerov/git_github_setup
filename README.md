@@ -179,8 +179,11 @@ b = 16
 # != means not equal to
 # it is another comparison operator
 # print(1 != 2)
+```
 
 # Boolean built-in methods
+```python
+
 greetings = "Hello World!"
 print(greetings)
 print(greetings.isalpha())  # checks if the string is comprised of alphabet values
@@ -191,9 +194,9 @@ print(greetings.isdigit())
 
 ```
 
+# String slicing
 ```python
 
-# String slicing
 # String indxing - starts from 0
 # Hello World!
 # 01234567891011
@@ -207,9 +210,9 @@ print(greetings[0:5])
 print(greetings[6:12])
 ```
 
+# String methods available
 ```python
 
-# String methods available
 
 # use var = string "nfrowbg              "
 white_space = "lots of spaces at the end          "
