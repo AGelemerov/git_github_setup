@@ -1,5 +1,7 @@
 # Python Introduction
+
 ## Why Python
+
 - Python is a dynamically typed language
 - Easy to understand
 - Easy to follow logic
@@ -7,6 +9,7 @@
 <img src="../images/why_python.png" title="Why choose Python" alt="DevOps_Cycle" width="600"/>
 
 ## Python use cases
+
 1. Data Analysis
 2. Web Development
 3. DevOps
@@ -18,14 +21,19 @@
 <img src="../images/python_use_cases.jpg" title="Use Cases" alt="DevOps_Cycle" width="600"/>
 
 ## Python set up with PyCharm
+
 - Ensure you have Python version 3.7+ installed
 - Install PyCharm (remember to check the box with "Add Python to PATH")
 - To ensure everything is set up correctly, write a simple "hello world" command
-- 
+-
+
 ## Python variables
+
 - Variables are something we store data in
 - This data can be of many types including
+
 ### Data Types
+
 - String (str)
 - Integer (int)
 - Float (float) (stands for floating point number, meaning decimal point)
@@ -35,6 +43,7 @@
 - Etc.
 
 - `print("Hello World")`
+
 ```python
 # TASK
 first_name = input("Please enter your first name. ")
@@ -48,6 +57,7 @@ print("Date of birth: " + DOB)
 print("Course name is: " + course_name)
 print("Answer to: Are you a UK resident: " + UK_resident)
  ```
+
 ```python
 # initial coding exercise
 # What is Python and how to code in i
@@ -86,77 +96,95 @@ gross_salary = "salary + travel"
 # print(name)
 # print("Hello " + name)
 ```
+
 # How to set up Git and GitHub
+
 ## Install Git
+
 1. Follow this link `https://git-scm.com/book/en/v2/Getting-Started-Installing-Git`
 2. Follow the instructions on the website closely and ensure you are doing exactly what it tells you
-   1. Here is a link for the git wizard `https://git-scm.com/download` 
+    1. Here is a link for the git wizard `https://git-scm.com/download`
+
 ## What to do to make sure you run a program with administrator privileges every time
+
 1. Find the executable for Git or your shortcut
 2. Select it and go to `Properties/Compatibility`
 3. Check the `Run this program as an administrator`
 4. You're all set!
+
 ## Linking Git and GitHub
 
 ### Ensure you create the SSH key pair correctly using this link
+
 `https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account`
 
 1. Make an account for GitHub and make a new repository
 2. The first page of the new repository will have instructions on how to link your git to github
 3. Follow these as closely as you can as one skip or mess up will cause you a lot of problems
+
 ### Things that could go wrong
-- You may not have access to something as you didn't start the program with admin privileges (refer to previous section to solve this)
+
+- You may not have access to something as you didn't start the program with admin privileges (refer to previous section
+  to solve this)
 - You did not do the SSH key pair correctly (ensure you follow the instructions here very closely)
 - You pasted the private key on github instead of the public one (ensure the public key is pasted in that section)
 - You did not initialise the folder you want to be a local repo as one (git init from git bash terminal)
 - Your IDE or terminal keeps giving you `ssh: connect to host github.com port 22: Network is unreachable`
-  - In this case specifically, you will need to create a config file to force SSH to use a specific port used for github
-  - To do this open the `.ssh` folder in your bash terminal
-  - Copy and paste the following commands in the terminal
-    - `nano ~/.ssh/config`
-    - Copy and paste this EXACTLY into the file you just opened
-      - ```bash
+    - In this case specifically, you will need to create a config file to force SSH to use a specific port used for
+      github
+    - To do this open the `.ssh` folder in your bash terminal
+    - Copy and paste the following commands in the terminal
+        - `nano ~/.ssh/config`
+        - Copy and paste this EXACTLY into the file you just opened
+            - ```bash
         Host github.com
           Hostname ssh.github.com
           Port 443
         ```
-    - To exit this editor
-      - Press Ctrl + O (letter not number)
-      - Press Enter
-      - Press Ctrl + x
-    - To see if you did it correctly use the following command
-      - `ssh -T git@github.com`
-      - If the command times out, you did something wrong, try it again
-    - Next steps:
-      - It will most likely as you a question with something called a "fingerprint"
-      - Say "yes" to this, and agree to anything else
-      - Run this command again `ssh -T git@github.com`
-      - And it should say `Hi xxxx! You've successfully authenticated, but GitHub does no provide shell access`
-      - That means you are done
-      - You can now push from your PyCharm or any IDE
+        - To exit this editor
+            - Press Ctrl + O (letter not number)
+            - Press Enter
+            - Press Ctrl + x
+        - To see if you did it correctly use the following command
+            - `ssh -T git@github.com`
+            - If the command times out, you did something wrong, try it again
+        - Next steps:
+            - It will most likely as you a question with something called a "fingerprint"
+            - Say "yes" to this, and agree to anything else
+            - Run this command again `ssh -T git@github.com`
+            - And it should say `Hi xxxx! You've successfully authenticated, but GitHub does no provide shell access`
+            - That means you are done
+            - You can now push from your PyCharm or any IDE
 
 # Git and GitHub pushing
+
 1. `git add .`
 2. `git commit -m "message"`
 3. `git push -u origin master`
-4. `git status` to check status 
+4. `git status` to check status
 
 # Python Intro
+
 ## Data types
+
 ## Operators
+
 ### Mathematical
+
 - `+`
 - `-`
 - `*`
 - `/`
 
 ### Comparison operators
+
 - `>`
 - `<`
 - `==`
 - `!=`
 - `>=`
 - `<=`
+
 ```python
 
 # Let's see the operators in action
@@ -182,6 +210,7 @@ b = 16
 ```
 
 # Boolean built-in methods
+
 ```python
 
 greetings = "Hello World!"
@@ -195,6 +224,7 @@ print(greetings.isdigit())
 ```
 
 # String slicing
+
 ```python
 
 # String indxing - starts from 0
@@ -211,6 +241,7 @@ print(greetings[6:12])
 ```
 
 # String methods available
+
 ```python
 
 
@@ -240,22 +271,21 @@ print(sample_text.replace("text", "code"))
 
 # Task 2
 
-first_name = input("Please enter your first name. ")
-last_name = input("Please enter your last name. ")
+first_name = input("Please enter your first name. ").capitalize()
+last_name = input("Please enter your last name. ").capitalize()
 DOB = input("Please enter your date of birth (dd/mm/yyyy). ")
-house_num = input("Please enter your house number. ")
-postcode = input("Please enter your postcode. ")
-course_name = input("Please enter your course name. ")
+house_num = int(input("Please enter your house number. "))
+postcode = input("Please enter your postcode. ").upper()
+course_name = input("Please enter your course name. ").lower().capitalize()
 
 UK_resident = input("You are a UK resident. (True of False). ")
-UK_resident = UK_resident.lower()
-UK_resident = UK_resident.capitalize()
+UK_resident = UK_resident.lower().capitalize()
 UK_resident = bool(UK_resident)
 
-print("Hello " + first_name + " " + last_name)
-print("Date of birth: " + DOB)
-print(f"Your address is: {house_num} {postcode.upper()}")
-print("Course name is: " + course_name)
-print("Answer to: Are you a UK resident: " + str(UK_resident))
+print(f"Hello {first_name} {last_name}")
+print(f"Date of birth: {DOB}")
+print(f"Your address is: {house_num} {postcode}")
+print(f"Course name is: {course_name}")
+print(f"Answer to: Are you a UK resident: {UK_resident}")
 
 ```
