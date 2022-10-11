@@ -344,5 +344,5 @@ print(essentials)
 ### Dictionaries
 
 ```
-
+```
 <img src="../images/python_exercise_completion.jpg" title="Flex" alt="ez" width="600"/>
