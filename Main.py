@@ -36,16 +36,34 @@ gross_salary = "salary + travel"
 # print("Hello " + name)
 
 
+# first_name = input("Please enter your first name. ")
+# last_name = input("Please enter your last name. ")
+# DOB = input("Please enter your date of birth (dd/mm/yyyy). ")
+# course_name = input("Please enter your course name. ")
+# UK_resident = input("Are you a UK resident? ")
+
+
+# print("Hello " + first_name + " " + last_name)
+# print("Date of birth: " + DOB)
+# print("Course name is: " + course_name)
+# print("Answer to: Are you a UK resident: " + UK_resident)
+
+# Task 2
+
 first_name = input("Please enter your first name. ")
 last_name = input("Please enter your last name. ")
 DOB = input("Please enter your date of birth (dd/mm/yyyy). ")
+house_num = input("Please enter your house number ")
+postcode = input("Please enter your postcode ")
 course_name = input("Please enter your course name. ")
-UK_resident = input("Are you a UK resident? ")
 
+UK_resident = input("You are a UK resident. (True of False) ")
+UK_resident = UK_resident.lower()
+UK_resident = UK_resident.capitalize()
+UK_resident = bool(UK_resident)
 
 print("Hello " + first_name + " " + last_name)
 print("Date of birth: " + DOB)
+print(f"Your address is: {house_num} {postcode.upper()}")
 print("Course name is: " + course_name)
-print("Answer to: Are you a UK resident: " + UK_resident)
-
-
+print("Answer to: Are you a UK resident: " + str(UK_resident))
