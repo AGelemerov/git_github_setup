@@ -344,3 +344,4 @@ print(essentials)
 ### Dictionaries
 
 ```
+![image](https://user-images.githubusercontent.com/62883753/195130497-d40b3c6d-9467-4169-a66c-ee0a91c88dfd.png)
