@@ -345,4 +345,4 @@ print(essentials)
 
 ```
 ```
-<img src="../images/python_exercise_completion.jpg" title="Flex" alt="ez" width="600"/>
+<img src="../images/python_exercise_completion.png" title="Flex" alt="ez" width="600"/>
