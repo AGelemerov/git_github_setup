@@ -163,27 +163,22 @@ gross_salary = "salary + travel"
 3. `git push -u origin master`
 4. `git status` to check status
 
-# Python Intro
-
-## Data types
-
 ## Operators
-
 ### Mathematical
 
-- `+`
-- `-`
-- `*`
-- `/`
+- `+` addition
+- `-` subtraction
+- `*` multiplication
+- `/` division
 
 ### Comparison operators
 
-- `>`
-- `<`
-- `==`
-- `!=`
-- `>=`
-- `<=`
+- `>` more than?
+- `<` less than?
+- `==` is equal to?
+- `!=` is NOT equal to?
+- `>=` is greater than or equal to?
+- `<=` is less than or equal to?
 
 ```python
 
