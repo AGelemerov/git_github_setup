@@ -1,8 +1,38 @@
 # Python Introduction
 ## Why Python
-### Python use cases
-#### Python set up with PyCharm
-##### Python variables
+- Python is a dynamically typed language
+- Easy to understand
+- Easy to follow logic
+
+`image here`
+
+## Python use cases
+1. Data Analysis
+2. Web Development
+3. DevOps
+4. Web Scrapers programming
+5. Machine Learning
+6. Educational
+7. Software Testing
+
+`image here`
+
+## Python set up with PyCharm
+- Ensure you have Python version 3.7+ installed
+- Install PyCharm (remember to check the box with "Add Python to PATH")
+- To ensure everything is setup correctly, write a simple "hello world" command
+- 
+## Python variables
+- Variables are something we store data in
+- This data can be of many types including
+### Data Types
+- String (str)
+- Integer (int)
+- Float (float) (stands for floating point number, meaning decimal point)
+- Boolean (bool)
+- Character (char)
+- List (list)
+- Etc.
 
 - `print("Hello World")`
 ```python
@@ -55,5 +85,7 @@ gross_salary = "salary + travel"
 # name = input()
 # print(name)
 # print("Hello " + name)
-
 ```
+
+
+<img src="../images/DevOps_Cycle.png" title="DevOps Cycle" alt="DevOps_Cycle" width="600"/>
