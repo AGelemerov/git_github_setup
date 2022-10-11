@@ -134,3 +134,26 @@ gross_salary = "salary + travel"
       - And it should say `Hi xxxx! You've successfully authenticated, but GitHub does no provide shell access`
       - That means you are done
       - You can now push from your PyCharm or any IDE
+
+# Git and GitHub pushing
+1. `git add .`
+2. `git commit -m "message"`
+3. `git push -u origin master`
+4. `git status` to check status 
+
+# Python Intro
+## Data types
+## Operators
+### Mathematical
+- `+`
+- `-`
+- `*`
+- `/`
+
+### Comparison operators
+- `>`
+- `<`
+- `==`
+- `!=`
+- `>=`
+- `<=`
