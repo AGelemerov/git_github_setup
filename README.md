@@ -96,7 +96,11 @@ gross_salary = "salary + travel"
 2. Select it and go to `Properties/Compatibility`
 3. Check the `Run this program as an administrator`
 4. You're all set!
-## Setting up GitHub
+## Linking Git and GitHub
+
+### Ensure you create the SSH key pair correctly using this link
+`https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account`
+
 1. Make an account for GitHub and make a new repository
 2. The first page of the new repository will have instructions on how to link your git to github
 3. Follow these as closely as you can as one skip or mess up will cause you a lot of problems
