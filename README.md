@@ -163,6 +163,8 @@ gross_salary = "salary + travel"
 3. `git push -u origin master`
 4. `git status` to check status
 
+<img src="../images/diagram.png" title="Flex" alt="ez" width="600"/>
+
 ## Operators
 
 ### Mathematical
