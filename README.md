@@ -137,9 +137,9 @@ gross_salary = "salary + travel"
         - `nano ~/.ssh/config`
         - Copy and paste this EXACTLY into the file you just opened
             - ```bash
-        Host github.com
-          Hostname ssh.github.com
-          Port 443
+      Host github.com
+      Hostname ssh.github.com
+      Port 443
         ```
         - To exit this editor
             - Press Ctrl + O (letter not number)
@@ -164,6 +164,7 @@ gross_salary = "salary + travel"
 4. `git status` to check status
 
 ## Operators
+
 ### Mathematical
 
 - `+` addition
@@ -214,7 +215,7 @@ print(greetings.isalpha())  # checks if the string is comprised of alphabet valu
 print(greetings.islower())  # checks if the string only has lower case letters
 print(greetings.startswith("H"))  # checks if the string greeting starts with a "H"
 print(greetings.endswith("!"))  # checks if the string greeting ends with a special character
-print(greetings.isdigit())
+print(greetings.isdigit())  # checks if the variable is a digit
 
 ```
 
@@ -228,11 +229,11 @@ print(greetings.isdigit())
 greetings = "Hello World!"
 
 print(len(greetings))  # checks the length of object in brackets
-print(greetings[:5])
-print(greetings[-6:])
+print(greetings[:5])  # print the value of the variable up to the 5th element
+print(greetings[-6:])  # print the value of the variable from the end to the 6th element going backwards
 
-print(greetings[0:5])
-print(greetings[6:12])
+print(greetings[0:5])  # print the value of the variable from character 0 to character 5
+print(greetings[6:12])  # print the value of the variable from character 6 to character 12
 ```
 
 # String methods available
@@ -245,7 +246,6 @@ white_space = "lots of spaces at the end          "
 print(len(white_space))
 
 # strip() method removes white spaces at the end of the string
-
 print(len(white_space.strip()))
 print(len(white_space))
 
@@ -257,7 +257,7 @@ print(sample_text.lower())
 print(sample_text.upper())
 print(sample_text.capitalize())
 print(sample_text[-6:].upper())
-print(sample_text.replace("text", "code"))
+print(sample_text.replace("text", "code"))  # replaces the first argument with the second one in the variable
 
 
 ```
@@ -277,6 +277,7 @@ UK_resident = input("You are a UK resident. (True of False). ")
 UK_resident = UK_resident.lower().capitalize()
 UK_resident = bool(UK_resident)
 
+# using Fstrings to simplify string manipulation 
 print(f"Hello {first_name} {last_name}")
 print(f"Date of birth: {DOB}")
 print(f"Your address is: {house_num} {postcode}")
@@ -284,9 +285,13 @@ print(f"Course name is: {course_name}")
 print(f"Answer to: Are you a UK resident: {UK_resident}")
 
 ```
+
 # Data Collections
+
 ## Types
+
 ### Lists
+
 ```python
 
 # declare by using: list = ["nvrfjei", "nfruiw", ""...]
@@ -320,9 +325,11 @@ multi_type = [1, 2, 3, "one", "two", "three"]
 print(multi_type)
 print(multi_type[2])
 ```
+
 ### Tuples
 
 #### Immutable - cannot be changes - edited - added
+
 ```python
 # user_details = DOB, country names, city names
 # Syntax: ("hbte","are","","greagr"...)
@@ -336,8 +343,10 @@ print(essentials)
 
 
 ```
+
 ### Dictionaries
 
 ```
 ```
+
 <img src="../images/python_exercise_completion.png" title="Flex" alt="ez" width="600"/>
